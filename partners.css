@@ -1,0 +1,19 @@
+.partners__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+
+.location__card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+  padding-left: 1rem;
+}
+
+
+.location__card h4 {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
