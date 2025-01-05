@@ -19292,3 +19292,22 @@ input:checked ~ .sign__form-rem--checkmark::after {
 .img-volunteer{
   border-radius: 0px !important;
 }
+
+
+.cases__grid_2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .cases__grid_2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cases__grid_2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
