@@ -19258,3 +19258,37 @@ input:checked ~ .sign__form-rem--checkmark::after {
 .footer__bottom {
   color: #EAECF0;
 }
+
+#motto-title {
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.location-wrapper, .phone-wrapper, .contact-wrapper{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.location-dex{
+  /* padding-left: 16px; */
+}
+
+.phone-desc{
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 16px; */
+}
+
+.phone-desc a, .contact-desc a{
+  color: #EAECF0;
+}
+
+
+.img-volunteer{
+  border-radius: 0px !important;
+}
