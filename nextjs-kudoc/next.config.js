@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	output: "export", // This enables static exports
+	basePath: "/dynamic-site",
+	trailingSlash: true, // This might help with static exports
 	images: {
-		unoptimized: true, // This is required for static exports when using next/image
-		domains: ["raw.githubusercontent.com"], // Allow GitHub raw content for images
+		unoptimized: true,
+		domains: ["raw.githubusercontent.com"],
 	},
-	basePath: "/dynamic-site", // This will serve the app under /dynamic-site
 };
 
 module.exports = nextConfig;
