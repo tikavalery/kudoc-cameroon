@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const links = [
@@ -48,7 +49,14 @@ function ImageCard({ src, alt }: { src: string; alt: string }) {
 			data-gall="gallery_0"
 			href={src}
 		>
-			<img className="img-fluid" src={src} alt={alt} width={400} height={400} />
+			<Image
+				className="img-fluid"
+				src={src}
+				alt={alt}
+				width={400}
+				height={400}
+				unoptimized
+			/>
 		</Link>
 	);
 }

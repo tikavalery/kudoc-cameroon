@@ -1,10 +1,12 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Navigation from "./components/Navigation";
 import "./globals.css";
 import "./index.css";
 import "./style.css";
 import "./styles/menu.css";
+
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Script from "next/script";
+import Navigation from "./components/Navigation";
 
 // Initialize the Inter font
 const inter = Inter({ subsets: ["latin"] });
@@ -37,7 +39,10 @@ export default function RootLayout({
 				<Navigation />
 				<main className="mt-5 pt-4">{children}</main>
 				{/* Add Bootstrap JS */}
-				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" />
+				<Script
+					src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+					strategy="afterInteractive"
+				/>
 			</body>
 		</html>
 	);
