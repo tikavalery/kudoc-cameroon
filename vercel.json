@@ -1,4 +1,18 @@
 {
   "outputDirectory": "nextjs-kudoc/out",
-  "buildCommand": "cd nextjs-kudoc && npm install && npm run build"
+  "buildCommand": "cd nextjs-kudoc && npm install && npm run build",
+  "rewrites": [
+    {
+      "source": "/app1/:path*",
+      "destination": "/app1/:path*"
+    },
+    {
+      "source": "/app2/:path*",
+      "destination": "/app2/:path*"
+    },
+    {
+      "source": "/((?!app1|app2).*)",
+      "destination": "/$1"
+    }
+  ]
 }
