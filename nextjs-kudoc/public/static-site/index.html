@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>KUDOC - Kumbo Development and Orientation Center</title>
+
+		<!-- Logo -->
+		<link rel="shortcut icon" href="./../assets/img/faveicon-alt.jpeg" type="image/x-icon" />
+
+		<!-- Fontawsome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./../assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="./../assets/fonts/Inter-VariableFont_slnt,wght.ttf" />
+
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="./../assets/css/style.css" />
+		<link rel="stylesheet" href="./index.css" />
+
+		<!-- Vercel Insights -->
+		<script>
+			window.va =
+				window.va ||
+				function () {
+					(window.vaq = window.vaq || []).push(arguments);
+				};
+		</script>
+		<script defer src="/_vercel/insights/script.js"></script>
+	</head>
+
+	<body>
+		<!-- GoUp START -->
+		<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+		<!-- GoUp END -->
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-white menu menu__scroll">
+			<div class="container p-sm-0">
+				<a class="navbar-brand menu__logo p-0 m-0" href="index.html"
+					><img class="menu__logo-img" src="./../assets/img/kudocLogo.png" alt="logo"
+				/></a>
+				<button
+					class="navbar-toggler menu__toggle"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav m-auto menu__list my-3 my-lg-0">
+						<li class="nav-item">
+							<!-- <a class="nav-link dropdown-toggle menu__list-link menu__list-link--active" href="#"
+                            id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            home
+                        </a> -->
+							<!-- <ul class="dropdown-menu menu__list-dropdown--ul overflow-hidden" aria-labelledby="navbarDrop">
+                            <li><a class="dropdown-item" href="index.html">home</a></li>
+                        </ul> -->
+							<a class="nav-link menu__list-link" href="index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu__list-link" href="about.html">about us</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link menu__list-link" href="team.html">Staff</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu__list-link" href="cases.html">Programs</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle menu__list-link"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								pages
+							</a>
+							<ul
+								class="dropdown-menu menu__list-dropdown--ul"
+								aria-labelledby="navbarDropdown"
+							>
+								<li>
+									<a class="dropdown-item" href="partners.html">Partners</a>
+								</li>
+								<!-- Changing the donate to point to contact page. Until we can figure out a way to accept donations  online.-->
+								<li><a class="dropdown-item" href="contact.html">Donate</a></li>
+								<li>
+									<!-- Redirect to the programs page. Until we have figure out a way to read from the CMS -->
+									<a class="dropdown-item" href="cases.html">blog details</a>
+								</li>
+								<!-- <li><a class="dropdown-item" href="faqs.html">faqs</a></li> -->
+								<!-- <li><a class="dropdown-item" href="guestbook.htmll">gallery</a></li> -->
+								<!-- <li>
+									<a class="dropdown-item" href="testimonials.html"
+										>testimonials</a
+									>
+								</li> -->
+								<li>
+									<a class="dropdown-item" href="volunteer.html">volunteer</a>
+								</li>
+								<!-- <li><a class="dropdown-item" href="error.html">error</a></li> -->
+							</ul>
+						</li>
+
+						<!-- <li class="nav-item">
+                        <a class="nav-link menu__list-link" href="blog.html">Guest Book</a>
+                    </li> -->
+						<li class="nav-item">
+							<a class="nav-link menu__list-link" href="gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu__list-link" href="contact.html">contact</a>
+						</li>
+					</ul>
+					<!-- <div class="d-sm-flex d-lg-block gap-4 mt-3 mt-lg-0">
+                    <a href="singin.html" class="btn menu__btn menu__btn-in mb-3 mb-lg-0">sign in</a>
+                    <a href="signup.html" class="btn menu__btn menu__btn-up mb-3 mb-lg-0">sign up</a>
+                </div> -->
+				</div>
+			</div>
+		</nav>
+		<!-- Hero START -->
+		<header class="hero">
+			<div class="container p-sm-0">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-12 col-md-7 col-lg-6">
+						<h1 class="global__title global__title-dark">
+							Kumbo Development and Orientation Centre - KUDOC
+						</h1>
+						<p class="global__desc">
+							Creating self-awareness and empowering the underprivileged.
+						</p>
+						<p class="global__desc">AUTHORIZATION No: E26/Ps/118/208.</p>
+						<a href="contact.html" class="global__btn"
+							>Donate
+							<i class="fa-solid fa-arrow-up-long global__btn-arrow"></i>
+						</a>
+					</div>
+					<div class="col-12 col-md-5 p-0 text-end d-none d-md-block position-relative">
+						<img class="img-fluid" src="./../assets/img/kudoc2.png" alt="image" />
+						<div class="hero__hand">
+							<img
+								class="img-fluid"
+								src="./../assets/img/eric-volunteers.jpg"
+								alt="hand image"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Hero END -->
+
+		<!-- Cases START -->
+		<div class="cases global__py pb-5">
+			<div class="container p-sm-0">
+				<div class="row">
+					<div
+						class="col-12 col-md-9 col-lg-6 text-center m-auto"
+						data-aos="fade-down"
+						data-aos-duration="1000"
+					>
+						<h3 class="global__text">Our cases</h3>
+						<h2 class="global__heading">Popular causes what you should know</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cases__slider">
+						<div class="card cases__card">
+							<div class="cases__card-img">
+								<a href="#">
+									<img
+										class="img-fluid w-100"
+										src="./../assets/img/kudoc3.jpg"
+										alt="image"
+									/>
+								</a>
+								<h4 class="cases__card-tag">Childrens health</h4>
+							</div>
+							<div class="card-body px-4">
+								<div class="d-flex">
+									<img
+										class="cases__card-i"
+										src="./../assets/img/location.svg"
+										alt="icon"
+									/>
+									<span class="cases__card-location"> Cameroon </span>
+								</div>
+								<div class="">
+									<a href="#" class="cases__card-title"
+										>Extensive Promotion of Healthcare</a
+									>
+								</div>
+								<div class="cases__card-range">
+									<p class="global__desc m-0">
+										KUDOC’S comprehensive and community-centric health program
+										takes primary healthcare services to the doorsteps of
+										underserved communities in both rural and urban Cameroon.
+									</p>
+									<div class="progress cases__card-progress">
+										<div
+											class="progress-bar cases__card-progress--bar"
+											role="progressbar"
+											style="width: 40%"
+											aria-valuenow="25"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+									<!-- <div class="cases__card-range--bottom">
+                                    <div class="d-flex align-items-center cases__card-range--bottom---m gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/box.svg" alt="icon">
+                                        <span class="cases__card-range--price">
+                                            Rasied: $34,000
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/dollar-s.svg"
+                                            alt="icon">
+                                        <span class="cases__card-range--price">goal: $40,500</span>
+                                    </div>
+                                </div> -->
+								</div>
+							</div>
+						</div>
+						<div class="card cases__card">
+							<div class="cases__card-img">
+								<a href="#">
+									<img
+										class="img-fluid w-100"
+										src="./../assets/img/kuduc4.jpg"
+										alt="image"
+									/>
+								</a>
+								<h4 class="cases__card-tag">Agriculture</h4>
+							</div>
+							<div class="card-body px-4">
+								<div class="d-flex">
+									<img
+										class="cases__card-i"
+										src="./../assets/img/location.svg"
+										alt="icon"
+									/>
+									<span class="cases__card-location ps-1"> Cameroon </span>
+								</div>
+								<div class="">
+									<a href="#" class="cases__card-title"
+										>Boosting agriculture in rural areas</a
+									>
+								</div>
+								<div class="cases__card-range">
+									<p class="global__desc m-0">
+										Our multi-stakeholder Agriculture approach seeks to empower
+										smallholder farmers to put them at the center of policies
+										for efficient farming and farm management, food security and
+										secure livelihoods.
+									</p>
+									<div class="progress cases__card-progress">
+										<div
+											class="progress-bar cases__card-progress--bar"
+											role="progressbar"
+											style="width: 30%"
+											aria-valuenow="25"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+									<!-- <div class="cases__card-range--bottom">
+                                    <div class="d-flex align-items-center cases__card-range--bottom---m gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/box.svg" alt="icon">
+                                        <span class="cases__card-range--price">
+                                            Rasied: $34,000
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/dollar-s.svg"
+                                            alt="icon">
+                                        <span class="cases__card-range--price">goal: $40,500</span>
+                                    </div>
+                                </div> -->
+								</div>
+							</div>
+						</div>
+						<div class="card cases__card">
+							<div class="cases__card-img">
+								<a href="#">
+									<img
+										class="img-fluid w-100"
+										src="./../assets/img/kudoc5.jpg"
+										alt="image"
+									/>
+								</a>
+								<h4 class="cases__card-tag">Child Protection and Development</h4>
+							</div>
+							<div class="card-body px-4">
+								<div class="d-flex">
+									<img
+										class="cases__card-i"
+										src="./../assets/img/location.svg"
+										alt="icon"
+									/>
+									<span class="cases__card-location ps-1"> Cameroon </span>
+								</div>
+								<div class="">
+									<a href="#" class="cases__card-title"
+										>Child protection and development</a
+									>
+								</div>
+								<div class="cases__card-range">
+									<p class="global__desc m-0">
+										We have a variety of projects that we have executed in Child
+										Protection. We aim to increase community education and
+										awareness about child abuse, including strategies for
+										prevention, intervention and treatment.
+									</p>
+									<div class="progress cases__card-progress">
+										<div
+											class="progress-bar cases__card-progress--bar"
+											role="progressbar"
+											style="width: 50%"
+											aria-valuenow="25"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+									<!-- <div class="cases__card-range--bottom">
+                                    <div class="d-flex align-items-center cases__card-range--bottom---m gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/box.svg" alt="icon">
+                                        <span class="cases__card-range--price">
+                                            Rasied: $34,000
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/dollar-s.svg"
+                                            alt="icon">
+                                        <span class="cases__card-range--price">goal: $40,500</span>
+                                    </div>
+                                </div> -->
+								</div>
+							</div>
+						</div>
+						<!-- <div class="card cases__card">
+                        <div class="cases__card-img">
+                            <a href="#">
+                                <img class="img-fluid w-100" src="./../assets/img/img-3.png" alt="image">
+                            </a>
+                            <h4 class="cases__card-tag">health</h4>
+                        </div>
+                        <div class="card-body px-4">
+                            <div class="d-flex">
+                                <img class="cases__card-i" src="./../assets/img/location.svg" alt="icon">
+                                <span class="cases__card-location ps-1">
+                                    South Africa
+                                </span>
+                            </div>
+                            <div class="">
+                                <a href="#" class="cases__card-title">Charity is a simple method to
+                                    prove
+                                    kindness
+                                    of
+                                    nation</a>
+                            </div>
+                            <div class="cases__card-range">
+                                <p class="global__desc m-0">Founded: 60.6%</p>
+                                <div class="progress cases__card-progress">
+                                    <div class="progress-bar cases__card-progress--bar" role="progressbar"
+                                        style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <div class="cases__card-range--bottom">
+                                    <div class="d-flex align-items-center cases__card-range--bottom---m gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/box.svg" alt="icon">
+                                        <span class="cases__card-range--price">
+                                            Rasied: $34,000
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/dollar-s.svg"
+                                            alt="icon">
+                                        <span class="cases__card-range--price">goal: $40,500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+						<!-- <div class="card cases__card">
+                        <div class="cases__card-img">
+                            <a href="#">
+                                <img class="img-fluid w-100" src="./../assets/img/img-1.png" alt="image">
+                            </a>
+                            <h4 class="cases__card-tag">health</h4>
+                        </div>
+                        <div class="card-body px-4">
+                            <div class="d-flex">
+                                <img class="cases__card-i" src="./../assets/img/location.svg" alt="icon">
+                                <span class="cases__card-location ps-1">
+                                    South Africa
+                                </span>
+                            </div>
+                            <div class="">
+                                <a href="#" class="cases__card-title">Providing health food for the
+                                    children</a>
+                            </div>
+                            <div class="cases__card-range">
+                                <p class="global__desc m-0">Founded: 80.40%</p>
+                                <div class="progress cases__card-progress">
+                                    <div class="progress-bar cases__card-progress--bar" role="progressbar"
+                                        style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <div class="cases__card-range--bottom">
+                                    <div class="d-flex align-items-center cases__card-range--bottom---m gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/box.svg" alt="icon">
+                                        <span class="cases__card-range--price">
+                                            Rasied: $34,000
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="cases__card-range--dollar" src="./../assets/img/dollar-s.svg"
+                                            alt="icon">
+                                        <span class="cases__card-range--price">goal: $40,500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Cases END -->
+
+		<!-- About START -->
+		<div class="about global__py">
+			<div class="container p-sm-0">
+				<div class="row">
+					<div class="col-6 my-auto my-xl-0">
+						<div
+							class="d-none d-lg-flex gap-4"
+							data-aos="fade-right"
+							data-aos-duration="1000"
+						>
+							<div class="about__image">
+								<img
+									class="img-fluid"
+									src="./../assets/img/kudoc6.jpg"
+									alt="image"
+								/>
+							</div>
+							<div class="about__image">
+								<img
+									class="img-fluid"
+									src="./../assets/img/kudoc9.jpg"
+									alt="image"
+								/>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12 col-md-9 col-lg-6"
+						data-aos="fade-left"
+						data-aos-duration="1000"
+					>
+						<h2 class="about__heading global__heading">
+							Welcome to the Official Website of KUDOC !!
+						</h2>
+						<p class="about__desc global__desc mb-3">
+							The Kumbo Development and Orientation Centre - abbreviated as KUDOC is a
+							Cameroon based Non-Governmental Organization created in 1999 by Dr.
+							Banadzem Joseph Lukong. KUDOC is impacting the lives of over 1.5 million
+							people in the following Domains:
+						</p>
+						<!-- <p class="about__desc global__desc m-0">Consectetur adipiscing elit. Etiam eu turpis molestie,
+                        dictum
+                        est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla
+                        accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget
+                        condimentum.</p> -->
+						<div class="">
+							<ul class="about__list">
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Education </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Health </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Agriculture </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0">
+										Water Sanitation and Hygiene
+									</span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Women Empowerment </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0">
+										Inter-Religious Peace Building
+									</span>
+								</li>
+
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Child Protection </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0">
+										Outreach to People Living with Disabilities
+									</span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Humanitarian Response </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Gender Based Violence </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Environmental Awareness </span>
+								</li>
+								<li>
+									<img
+										class="cases__card-range--dollar p-1 me-2"
+										src="./../assets/img/check.svg"
+										alt="icon"
+									/>
+									<span class="global__desc m-0"> Clean Renewable Energy </span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- About END -->
+
+		<!-- Service START -->
+		<div class="service global__py pt-0">
+			<div class="container p-sm-0">
+				<div class="row">
+					<div
+						class="col-12 col-md-9 col-lg-6 text-center m-auto service__m"
+						data-aos="fade-down"
+						data-aos-duration="1000"
+					>
+						<h2 class="global__heading m-0">About Us</h2>
+						<p class="about__desc global__desc mt-3 mb-0">
+							The Kumbo Development and Orientation Centre - abbreviated as KUDOC is a
+							Cameroon based Non-Governmental Organization created in 1999 by Dr.
+							Banadzem Joseph Lukong. KUDOC is impacting the lives of over 1.5 million
+							people.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 pe-md-4">
+						<div
+							class="service__card service__card-linear"
+							data-aos="fade-left"
+							data-aos-duration="1000"
+						>
+							<div class="global__icon service__card-icon">
+								<img
+									src="./../assets/img/donation.svg"
+									alt="image"
+									style="height: 32px; width: 32px"
+								/>
+							</div>
+							<div class="">
+								<a href="mailto:kudocngo@kudoc.org" class="volunteer-href">
+									<h3 class="service__card-heading global__heading">
+										Give Donation
+									</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 ps-md-4">
+						<div
+							class="service__card service__card-linear mb-0"
+							data-aos="fade-right"
+							data-aos-duration="1000"
+						>
+							<div class="global__icon service__card-icon">
+								<img
+									src="./../assets/img/hands-2.svg"
+									alt="image"
+									style="height: 32px; width: 32px"
+								/>
+							</div>
+
+							<div class="">
+								<a href="mailto:kudocngo@kudoc.org" class="volunteer-href">
+									<h3 class="service__card-heading global__heading">
+										Become Volunteer
+									</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Service END -->
+
+		<!-- Org START -->
+		<div class="org global__py pt-0">
+			<div class="container p-sm-0">
+				<div class="row">
+					<div
+						class="col-12 col-md-9 col-lg-7 text-center m-auto service__m"
+						data-aos="fade-down"
+						data-aos-duration="1000"
+					>
+						<h2 class="global__heading m-0">The mission of our organization.</h2>
+						<p class="org__desc global__desc mt-3 mb-0">
+							Creating self-awareness and empowering the underprivileged.
+						</p>
+					</div>
+				</div>
+				<div class="row align-items-xl-center">
+					<div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+						<ul>
+							<li class="org__li">
+								<div class="org__li-img">
+									<img
+										class="org__li-img--icon"
+										src="./../assets/img/campain.svg"
+										alt=""
+									/>
+								</div>
+								<div class="">
+									<h3 class="org__li-name">Empowering the underprivileged</h3>
+									<p class="org__desc global__desc mt-2 mb-0">
+										Track how many people signed the petition by week, month,
+										year.
+									</p>
+								</div>
+							</li>
+							<li class="org__li">
+								<div class="org__li-img">
+									<img
+										class="org__li-img--icon"
+										src="./../assets/img/donation.svg"
+										alt=""
+									/>
+								</div>
+								<div class="">
+									<h3 class="org__li-name">Women Empowerment</h3>
+									<p class="org__desc global__desc mt-2 mb-0">
+										Empowering rural women is a prime objective of KUDOC.
+									</p>
+								</div>
+							</li>
+							<!-- <li class="org__li">
+                            <div class="org__li-img">
+                                <img class="org__li-img--icon" src="./../assets/img/money.svg" alt="">
+                            </div>
+                            <div class="">
+                                <h3 class="org__li-name">Withdraw your money</h3>
+                                <p class="org__desc global__desc mt-2 mb-0">Withdraw your money to bank account or
+                                    Paypal easily with few set up.</p>
+                            </div>
+                        </li> -->
+						</ul>
+					</div>
+					<div
+						class="col-lg-6 d-none d-sm-block mt-5 mt-lg-0"
+						data-aos="fade-right"
+						data-aos-duration="1000"
+					>
+						<img class="img-fluid" src="./../assets/img/kudoc10.png" alt="image" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Org END -->
+
+		<!-- Num START: DONATIONS Counter -->
+		<!-- <div class="num">
+        <div class="container p-sm-0">
+            <div class="num__body">
+                <div class="">
+                    <h4 class="num__body-digit"><span class="num__counter">6500</span>+</h4>
+                    <p class="num__body-text">Donation</p>
+                </div>
+                <div class="">
+                    <h4 class="num__body-digit">$<span class="num__counter">60</span>+</h4>
+                    <p class="num__body-text">Found Raised</p>
+                </div>
+                <div class="">
+                    <h4 class="num__body-digit"><span class="num__counter">250</span> </h4>
+                    <p class="num__body-text">Volunteer</p>
+                </div>
+                <div class="">
+                    <h4 class="num__body-digit"><span class="num__counter">110</span></h4>
+                    <p class="num__body-text">project</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+		<!-- Num END -->
+
+		<!-- Testimonial START -->
+		<!-- <div class="testimonial">
+        <div class="container p-sm-0">
+            <div class="row">
+                <div class="col-12 col-md-9 col-lg-6 text-center m-auto" data-aos="fade-down" data-aos-duration="1000">
+                    <h3 class="global__text">Testimonials</h3>
+                    <h2 class="global__heading">What people say's about us
+                    </h2>
+                </div>
+            </div>
+
+            <div class="testimonial__body">
+                <div class="testimonial__body-slider">
+                    <div class="">
+                        <div class="testimonial__card">
+                            <div class="">
+                                <ul class="testimonial__card-ul">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="">
+                                <p class="global__desc testimonial__card-desc">Kudoc is great for people to
+                                    bring
+                                    changes to what
+                                    they believe in, it’s nice to see
+                                    some good morals and common sense
+                                    being acknowledge where modern governments etc fail.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid" src="./../assets/img/client-1.png" alt="user">
+                                    <div class="ps-3">
+                                        <h4 class="testimonial__card-name">Priscilla Lucas</h4>
+                                        <span class="testimonial__card-type">
+                                            Founder
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="testimonial__card">
+                            <div class="">
+                                <ul class="testimonial__card-ul">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="">
+                                <p class="testimonial__card-desc global__desc">Kudoc is great for people to
+                                    bring
+                                    changes to what
+                                    they believe in, it’s nice to see
+                                    some good morals and common sense
+                                    being acknowledge where modern governments etc fail.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid" src="./../assets/img/client-2.png" alt="user">
+                                    <div class="ps-3">
+                                        <h4 class="testimonial__card-name">Dianne Russell</h4>
+                                        <span class="testimonial__card-type">
+                                            Founder
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="testimonial__card">
+                            <div class="">
+                                <ul class="testimonial__card-ul">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="">
+                                <p class="testimonial__card-desc global__desc">Kudoc is great for people to
+                                    bring
+                                    changes to what
+                                    they believe in, it’s nice to see
+                                    some good morals and common sense
+                                    being acknowledge where modern governments etc fail.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid" src="./../assets/img/client-2.png" alt="user">
+                                    <div class="ps-3">
+                                        <h4 class="testimonial__card-name">Dianne Russell</h4>
+                                        <span class="testimonial__card-type">
+                                            Founder
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="testimonial__card">
+                            <div class="">
+                                <ul class="testimonial__card-ul">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="">
+                                <p class="global__desc testimonial__card-desc">Kudoc is great for people to
+                                    bring
+                                    changes to what
+                                    they believe in, it’s nice to see
+                                    some good morals and common sense
+                                    being acknowledge where modern governments etc fail.</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid" src="./../assets/img/client-1.png" alt="user">
+                                    <div class="ps-3">
+                                        <h4 class="testimonial__card-name">Priscilla Lucas</h4>
+                                        <span class="testimonial__card-type">
+                                            Founder
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+		<!-- Testimonial END -->
+
+		<!-- Team START-->
+		<div class="team global__py">
+			<div class="container p-sm-0">
+				<div class="row">
+					<div
+						class="col-12 col-md-9 col-lg-6 text-center m-auto"
+						data-aos="fade-down"
+						data-aos-duration="1000"
+					>
+						<!-- <h3 class="global__text">our team</h3> -->
+						<h2 class="global__heading">Our team</h2>
+					</div>
+				</div>
+
+				<div class="team__grid">
+					<!-- User 01 -->
+					<div class="team__card">
+						<div class="team__card-head">
+							<img
+								class="img-fluid"
+								src="./../assets/img/kudoc11.jpg"
+								alt="user image"
+							/>
+							<div class="team__card-head--social">
+								<ul class="">
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://m.facebook.com/groups/475983968115715/?ref=share&mibextid=NSMWBT"
+											><i class="fa-brands fa-facebook"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://linkedin.com"
+											><i class="fa-brands fa-linkedin-in"></i
+										></a>
+									</li>
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://www.instagram.com"
+											><i class="fa-brands fa-instagram"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://twitter.com"
+											><i class="fa-brands fa-twitter"></i
+										></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="">
+							<a href="#" class="team__user">BANADZEM Valery BERINYNY</a>
+							<p class="team__cate">Honorary President</p>
+						</div>
+					</div>
+					<!-- User 02 -->
+					<div class="team__card">
+						<div class="team__card-head">
+							<img
+								class="img-fluid"
+								src="./../assets/img/kudoc12.jpg"
+								alt="user image"
+							/>
+							<div class="team__card-head--social">
+								<ul class="">
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://m.facebook.com/groups/475983968115715/?ref=share&mibextid=NSMWBT"
+											><i class="fa-brands fa-facebook"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://linkedin.com"
+											><i class="fa-brands fa-linkedin-in"></i
+										></a>
+									</li>
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://www.instagram.com"
+											><i class="fa-brands fa-instagram"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://twitter.com"
+											><i class="fa-brands fa-twitter"></i
+										></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="">
+							<a href="#" class="team__user">TANGKA Eric DINDZE </a>
+							<p class="team__cate">KUDOC Director</p>
+						</div>
+					</div>
+					<!-- User 03 -->
+					<div class="team__card">
+						<div class="team__card-head">
+							<img
+								class="img-fluid"
+								src="./../assets/img/kudoc131.jpg"
+								alt="user image"
+							/>
+							<div class="team__card-head--social">
+								<ul class="">
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://m.facebook.com/groups/475983968115715/?ref=share&mibextid=NSMWBT"
+											><i class="fa-brands fa-facebook"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://linkedin.com"
+											><i class="fa-brands fa-linkedin-in"></i
+										></a>
+									</li>
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://www.instagram.com"
+											><i class="fa-brands fa-instagram"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://twitter.com"
+											><i class="fa-brands fa-twitter"></i
+										></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="">
+							<a href="#" class="team__user">Vera LIFOTER</a>
+							<p class="team__cate">Program Director</p>
+						</div>
+					</div>
+					<!-- User 04 -->
+					<div class="team__card">
+						<div class="team__card-head">
+							<img
+								class="img-fluid"
+								src="./../assets/img/kudoc14.jpg"
+								alt="user image"
+							/>
+							<div class="team__card-head--social">
+								<ul class="">
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://m.facebook.com/groups/475983968115715/?ref=share&mibextid=NSMWBT"
+											><i class="fa-brands fa-facebook"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://linkedin.com"
+											><i class="fa-brands fa-linkedin-in"></i
+										></a>
+									</li>
+									<li>
+										<a
+											class="team__card-head--link"
+											href="https://www.instagram.com"
+											><i class="fa-brands fa-instagram"></i
+										></a>
+									</li>
+									<li>
+										<a class="team__card-head--link" href="https://twitter.com"
+											><i class="fa-brands fa-twitter"></i
+										></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="">
+							<a href="#" class="team__user">Caroline BONGDU</a>
+							<p class="team__cate">Assistant Program Director</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Team END -->
+
+		<!-- Blog START -->
+		<!-- <div class="blog global__py pt-0">
+        <div class="container p-sm-0">
+            <div class="row">
+                <div class="col-12 col-md-9 col-lg-6 text-center m-auto" data-aos="fade-down" data-aos-duration="1000">
+                    <h3 class="global__text">our blog</h3>
+                    <h2 class="global__heading">Checkout latest news
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonial__body blog__body">
+                    <div class="blog__body-slider">
+                        <div class="card blog__card">
+                            <a href="blog.html">
+                                <img class="img-fluid w-100" src="./../assets/img/img-4.png" alt="image">
+                            </a>
+                            <div class="card-body px-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="">
+                                        <span class="blog__card-span">Donation</span>
+                                    </div>
+                                    <hr class="blog__card-line">
+                                    <div class="">
+                                        <span class="blog__card-span">October 25, 2023</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="blog.html" class="blog__title">4 Steps to Take on Your Next
+                                        Giving
+                                        Tuesday</a>
+                                    <p class="global__desc blog__desc">consectetur adipisicing elit,
+                                        sed
+                                        do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore
+                                        magna aliqua. Ut enim ad minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card blog__card">
+                            <a href="blog.html">
+                                <img class="img-fluid w-100" src="./../assets/img/img-5.png" alt="image">
+                            </a>
+                            <div class="card-body px-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="">
+                                        <span class="blog__card-span">Donation</span>
+                                    </div>
+                                    <hr class="blog__card-line">
+                                    <div class="">
+                                        <span class="blog__card-span">October 25, 2023</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="blog.html" class="blog__title">5 Creative Giving Tuesday
+                                        Nonprofit
+                                        Storytelling</a>
+                                    <p class="global__desc blog__desc">consectetur adipisicing elit,
+                                        sed
+                                        do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore
+                                        magna aliqua. Ut enim ad minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card blog__card">
+                            <a href="blog.html">
+                                <img class="img-fluid w-100" src="./../assets/img/img-6.png" alt="image">
+                            </a>
+                            <div class="card-body px-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="">
+                                        <span class="blog__card-span">Donation</span>
+                                    </div>
+                                    <hr class="blog__card-line">
+                                    <div class="">
+                                        <span class="blog__card-span">October 25, 2023</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="blog.html" class="blog__title">Tips for Retaining Donors
+                                        After Your
+                                        Giving
+                                        Campaign</a>
+                                    <p class="global__desc blog__desc">consectetur adipisicing elit,
+                                        sed
+                                        do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore
+                                        magna aliqua. Ut enim ad minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card blog__card">
+                            <a href="blog.html">
+                                <img class="img-fluid w-100" src="./../assets/img/img-5.png" alt="image">
+                            </a>
+                            <div class="card-body px-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="">
+                                        <span class="blog__card-span">Donation</span>
+                                    </div>
+                                    <hr class="blog__card-line">
+                                    <div class="">
+                                        <span class="blog__card-span">October 25, 2023</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="blog.html" class="blog__title">5 Creative Giving Tuesday
+                                        Nonprofit
+                                        Storytelling</a>
+                                    <p class="global__desc blog__desc">consectetur adipisicing elit,
+                                        sed
+                                        do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore
+                                        magna aliqua. Ut enim ad minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card blog__card">
+                            <a href="blog.html">
+                                <img class="img-fluid w-100" src="./../assets/img/img-4.png" alt="image">
+                            </a>
+                            <div class="card-body px-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="">
+                                        <span class="blog__card-span">Donation</span>
+                                    </div>
+                                    <hr class="blog__card-line">
+                                    <div class="">
+                                        <span class="blog__card-span">October 25, 2023</span>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="blog.html" class="blog__title">4 Steps to Take on Your Next
+                                        Giving
+                                        Tuesday</a>
+                                    <p class="global__desc blog__desc">consectetur adipisicing elit,
+                                        sed
+                                        do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore
+                                        magna aliqua. Ut enim ad minim
+                                        veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+		<!-- Blog END -->
+
+		<!-- Join_US START -->
+		<div class="join">
+			<div class="container p-sm-0">
+				<div class="row">
+					<div class="card join__card">
+						<img
+							src="./../assets/img/BG-Element.png"
+							class="img-fluid join__card-img"
+							alt="image"
+						/>
+						<div class="card-img-overlay join__card-layer">
+							<div class="col-11 col-md-7">
+								<h3 class="join__text global__text">Become a volenteer</h3>
+								<h2 class="join__heading global__heading">
+									Join Your hands with us to give others a better life and future
+								</h2>
+								<a
+									href="mailto:kudocngo@kudoc.org"
+									class="join__card-layer--btn global__btn"
+									>Contact Us</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--J oin_US END -->
+
+		<!-- Footer START -->
+		<div class="footer" id="footer-id"></div>
+		<!-- Footer END -->
+
+		<!-- Jquary -->
+		<script src="./../assets/js/jquery-1.12.4.min.js"></script>
+		<!-- Venobox -->
+		<script src="./../assets/js/venobox.min.js"></script>
+		<!-- Counter JS -->
+		<script src="./../assets/js/waypoints.min.js"></script>
+		<script src="./../assets/js/jquery.counterup.min.js"></script>
+		<!-- Slick JS -->
+		<script src="./../assets/js/slick.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="./../assets/js/bootstrap.bundle.min.js"></script>
+		<!-- Aos JS -->
+		<script src="./../assets/js/aos.js"></script>
+		<!-- JS -->
+		<script src="./footer.js"></script>
+		<script src="./../assets/js/app.js"></script>
+	</body>
+</html>
