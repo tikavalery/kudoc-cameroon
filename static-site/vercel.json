@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/dynamic-site/:path*",
+      "destination": "https://nextjs-kudoc.vercel.app/dynamic-site/:path*"
+    }
+  ]
+}
