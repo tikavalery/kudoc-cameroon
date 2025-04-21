@@ -1,12 +1,14 @@
 "use client";
-import { cn } from "@/utils/cn";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { useIsMobile } from "@/hooks/use-mobile";
+import { cn } from "@/utils/cn";
+
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
-
+	const isMobile = useIsMobile();
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-white menu menu__scroll">
 			<div className="container p-sm-0">
@@ -35,7 +37,7 @@ const Navbar = () => {
 				<div
 					className={cn("navbar-collapse", isOpen ? "show" : "collapse")}
 					style={{
-						visibility: isOpen ? "visible" : "hidden",
+						visibility: isMobile ? (isOpen ? "visible" : "hidden") : "visible",
 					}}
 					id="navbarSupportedContent"
 				>
