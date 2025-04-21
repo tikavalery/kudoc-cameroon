@@ -6,7 +6,8 @@ import "./styles/menu.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import Navigation from "./components/Navigation";
+import { Footer } from "./components/footer";
+import Navigation from "./components/header";
 
 // Initialize the Inter font
 const inter = Inter({ subsets: ["latin"] });
@@ -38,6 +39,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<Navigation />
 				<main className="mt-5 pt-4">{children}</main>
+				<Footer />
 				{/* Add Bootstrap JS */}
 				<Script
 					src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
