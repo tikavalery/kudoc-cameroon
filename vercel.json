@@ -1,0 +1,4 @@
+{
+  "outputDirectory": "nextjs-kudoc/out",
+  "buildCommand": "cd nextjs-kudoc && npm install && npm run build"
+}
