@@ -10,7 +10,8 @@
     "build": "npm run build --workspace=nextjs-kudoc",
     "start": "npm run start --workspace=nextjs-kudoc",
     "serve-static": "npx serve .",
-    "dev:all": "concurrently \"npm run serve-static\" \"npm run dev\""
+    "dev:all": "concurrently \"npm run serve-static\" \"npm run dev\"",
+    "deploy": "vercel --prod && cd nextjs-kudoc && vercel --prod"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
