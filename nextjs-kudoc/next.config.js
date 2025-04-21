@@ -5,7 +5,7 @@ const nextConfig = {
 		unoptimized: true, // This is required for static exports when using next/image
 		domains: ["raw.githubusercontent.com"], // Allow GitHub raw content for images
 	},
-	basePath: "/app1", // This will serve the app under /app1
+	basePath: "/dynamic-site", // This will serve the app under /dynamic-site
 };
 
 module.exports = nextConfig;
