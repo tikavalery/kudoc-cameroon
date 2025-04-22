@@ -1,3 +1,4 @@
+import "aos/dist/aos.css";
 import "./globals.css";
 import "./index.css";
 import "./style.css";
@@ -6,6 +7,7 @@ import "./styles/menu.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import AosInitializer from "./components/aos-initializer";
 import { Footer } from "./components/footer";
 import Navigation from "./components/header";
 
@@ -13,8 +15,8 @@ import Navigation from "./components/header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Kudoc Cameroon",
-	description: "Kudoc Cameroon - Making a difference in communities",
+	title: "KUDOC - Kumbo Development and Orientation Center",
+	description: "Creating self-awareness and empowering the underprivileged.",
 };
 
 export default function RootLayout({
@@ -37,12 +39,29 @@ export default function RootLayout({
 				/>
 			</head>
 			<body className={inter.className}>
+				<AosInitializer />
 				<Navigation />
-				<main className="mt-5 pt-4">{children}</main>
+				{children}
 				<Footer />
 				{/* Add Bootstrap JS */}
 				<Script
 					src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+					strategy="afterInteractive"
+				/>
+				<Script
+					src="/assets/js/jquery-1.12.4.min.js"
+					strategy="afterInteractive"
+				/>
+				<Script src="/assets/js/venobox.min.js" strategy="afterInteractive" />
+				<Script src="/assets/js/waypoints.min.js" strategy="afterInteractive" />
+				<Script
+					src="/assets/js/jquery.counterup.min.js"
+					strategy="afterInteractive"
+				/>
+				<Script src="/assets/js/slick.min.js" strategy="afterInteractive" />
+
+				<Script
+					src="/assets/js/bootstrap.bundle.min.js"
 					strategy="afterInteractive"
 				/>
 			</body>
